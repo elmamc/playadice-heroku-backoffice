@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiEndpointPrefix: 'https://playadice-backend.herokuapp.com/api/',
+  apiVersion:'v1'
 };
 
 /*
