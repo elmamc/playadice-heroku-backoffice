@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const webAppName = 'playadice-heroku-backoffice';
 
-
+app.use(express.static(__dirname + `/dist/${webAppName}`));
 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname +
