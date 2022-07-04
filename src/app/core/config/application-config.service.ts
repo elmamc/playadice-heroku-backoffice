@@ -28,6 +28,6 @@ export class ApplicationConfigService {
     if (microservice) {
       return `${this.endpointPrefix}services/${microservice}/${api}`;
     }
-    return `${this.endpointPrefix}/${this.apiVersion}/${api}`;
+    return `${this.endpointPrefix}${this.apiVersion}/${api}`;
   }
 }
