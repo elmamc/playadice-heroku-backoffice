@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpointPrefix: 'https://playadice-backend.herokuapp.com/api/',
+  apiEndpointPrefix: 'http://localhost:8080/api/',
   apiVersion:'v1'
 };
 
