@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     console.log("test", this.applicationConfigService.getEndpointFor('login'))
     this.http
-      .post(this.applicationConfigService.getEndpointFor('login'), credentials)
+      .post(this.applicationConfigService.getEndpointFor('login'), {})
       .subscribe((response => console.log("response",response)));
   }
 }
